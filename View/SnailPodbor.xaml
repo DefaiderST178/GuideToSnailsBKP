@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideToSnailsBKP.View.SnailPodbor" Shell.NavBarHasShadow="False">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" BackgroundColor="#B4B471">
+            <!--Основная информация-->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079" >
+                <Label Text="Подбор улитки" FontSize="22" TextColor="#231717" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <!--Вопрос 1-->
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="1) Какой у Вас размер аквариума в литрах?" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <RadioButton x:Name="Answer1_1" GroupName="Answer1" Grid.Row="0" Grid.Column="0" />
+                        <RadioButton x:Name="Answer1_2" GroupName="Answer1" Grid.Row="1" Grid.Column="0" />
+                        <RadioButton x:Name="Answer1_3" GroupName="Answer1" Grid.Row="2" Grid.Column="0" />
+
+                        <Label Text="до 20 литров" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="20-50 литров"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="более 50 литров" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <!--Вопрос 2-->
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="2) Какую температуру поддерживает аквариум?" TextColor="#1F1010" FontAttributes="Bold"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <RadioButton x:Name="Answer2_1" GroupName="Answer2" Grid.Row="0" Grid.Column="0" />
+                        <RadioButton x:Name="Answer2_2" GroupName="Answer2" Grid.Row="1" Grid.Column="0" />
+                        <RadioButton x:Name="Answer2_3" GroupName="Answer2" Grid.Row="2" Grid.Column="0" />
+
+                        <Label Text="Холодная вода (менее 20°C)" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Умеренная (20-25°C)"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Теплая вода (более 25°C)" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <!--Вопрос 3-->
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="3) Какие параметры воды в аквариуме?" TextColor="#1F1010" FontAttributes="Bold"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <RadioButton x:Name="Answer3_1" GroupName="Answer3" Grid.Row="0" Grid.Column="0" />
+                        <RadioButton x:Name="Answer3_2" GroupName="Answer3" Grid.Row="1" Grid.Column="0" />
+                        <RadioButton x:Name="Answer3_3" GroupName="Answer3" Grid.Row="2" Grid.Column="0" />
+
+                        <Label Text="Мягкая вода (жесткость менее 6 dGH)" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Средняя жесткость (6-12 dGH)"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Жесткая вода (более 12 dGH)" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <!--Вопрос 4-->
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="4) Есть ли в аквариуме живые растения?" TextColor="#1F1010" FontAttributes="Bold"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <RadioButton x:Name="Answer4_1" GroupName="Answer4" Grid.Row="0" Grid.Column="0" />
+                        <RadioButton x:Name="Answer4_2" GroupName="Answer4" Grid.Row="1" Grid.Column="0" />
+                        <RadioButton x:Name="Answer4_3" GroupName="Answer4" Grid.Row="2" Grid.Column="0" />
+
+                        <Label Text="Да, много живых растений" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Нет живых растений"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="Несколько живых растений" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <!--Вопрос 5-->
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="5) Что для Вас важнее: декоративность или функциональность улитки?" TextColor="#1F1010" FontAttributes="Bold"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <RadioButton x:Name="Answer5_1" GroupName="Answer5" Grid.Row="0" Grid.Column="0" />
+                        <RadioButton x:Name="Answer5_2" GroupName="Answer5" Grid.Row="1" Grid.Column="0" />
+                        <RadioButton x:Name="Answer5_3" GroupName="Answer5" Grid.Row="2" Grid.Column="0" />
+
+                        <Label Text="декоративность (красивая раковина, яркий окрас)" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="функциональность (очистка аквариума, борьба с водорослями)"  Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"/>
+                        <Label Text="равнозначно важны оба аспекта" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10">
+                <Label Text="" x:Name="ResultTB" HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <HorizontalStackLayout HorizontalOptions="Start" >
+                <Button Text="Узнать результат" x:Name="ResultBtn" Clicked="ResultBtn_Clicked"
+                BackgroundColor="#948079" Margin="10" FontSize="16" TextColor="Black" HorizontalOptions="Start"
+                HeightRequest="50" WidthRequest="220"/>
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

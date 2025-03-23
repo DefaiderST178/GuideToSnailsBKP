@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideToSnailsBKP.View.SelectedCare"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="#B4B471">
+
+            <!--Основная информация-->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079" >
+                <Label Text="{Binding Title}" FontSize="22" TextColor="#231717" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="Описание" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Label Text="{Binding Description}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Image Source="{Binding Images[0]}" Aspect="AspectFit" HeightRequest="200" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <Label Text="{Binding DopDescription[0]}" />
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <Image Source="{Binding Images[1]}" Aspect="AspectFit" HeightRequest="200" />
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <Label Text="{Binding DopDescription[1]}" />
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <Image Source="{Binding Images[2]}" Aspect="AspectFit" HeightRequest="200" />
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <Label Text="{Binding DopDescription[2]}" />
+            </Frame>
+
+            <Button x:Name="Back" Clicked="Back_Clicked" BackgroundColor="#948079" Margin="10"
+    Text="Назад" FontSize="16" TextColor="Black" HorizontalOptions="Start"
+    HeightRequest="50" WidthRequest="150"/>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

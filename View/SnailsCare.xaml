@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideToSnailsBKP.View.SnailsCare">
+
+    <ScrollView>
+
+        <StackLayout  Orientation="Vertical" BackgroundColor="#B4B471">
+
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079">
+                <Label Text="Советы по уходу" FontSize="22" HorizontalOptions="Center" TextColor="#231717" FontAttributes="Bold"/>
+            </Frame>
+
+            <ListView x:Name="CareList" ItemsSource="{Binding}" ItemSelected="CareList_ItemSelected" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <Frame CornerRadius="10" Padding="10" HasShadow="True" Margin="7,5,10,5">
+
+                                    <Grid Padding="10" ColumnSpacing="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Grid.Column="0" Source="{Binding Images[0]}" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+
+                                        <Label Text="{Binding Title}" HorizontalOptions="Start" Grid.Column="1" />
+
+                                    </Grid>
+                                </Frame>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

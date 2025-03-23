@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideToSnailsBKP.View.SelectedSnail"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="#B4B471">
+
+            <!--Основная информация-->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079" >
+                <Label Text="{Binding Name}" FontSize="22" TextColor="#231717" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Label Text="Научное название" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Label Text="{Binding ScientificName}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Image Source="{Binding Images[0]}" Aspect="AspectFit" HeightRequest="200"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <Label Text="Описание" FontAttributes="Bold" TextColor="#1F1010"/>
+                    <Label Text="{Binding Description}" FontSize="Body"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Image Source="{Binding Images[1]}" Aspect="AspectFit" HeightRequest="200" />
+                </StackLayout>
+            </Frame>
+
+            <!--Физические характеристики-->
+            <Frame CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <Label Text="Средний размер раковины:" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Label Text="{Binding AverageShellSize}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <Label Text="Цвет раковины:" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Label Text="{Binding ShellColor}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <Label Text="Цвет тела:" TextColor="#1F1010" FontAttributes="Bold"/>
+                    <Label Text="{Binding BodyColor}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <Label Text="Продолжительность жизни:" TextColor="#231717" FontAttributes="Bold"/>
+                    <Label Text="{Binding LifespanInYears}" />
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Margin="10" >
+                <StackLayout >
+                    <Image Source="{Binding Images[2]}" Aspect="AspectFit" HeightRequest="200" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Frame>
+
+            <Button x:Name="Back" Clicked="Back_Clicked" BackgroundColor="#948079" Margin="10"
+                Text="Назад" FontSize="16" TextColor="Black" HorizontalOptions="Start"
+                HeightRequest="50" WidthRequest="150"/>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

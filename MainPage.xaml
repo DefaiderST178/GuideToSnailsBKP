@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideToSnailsBKP.MainPage">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" BackgroundColor="#B4B471">
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079">
+                <Label Text="Улиточки" FontSize="22" HorizontalOptions="Center" TextColor="#231717" FontAttributes="Bold"/>
+            </Frame>
+
+            <Frame CornerRadius="25" Margin="10">
+                <StackLayout>
+                    <Label Text="Улиточки приветствуют Вас!" TextColor="#1F1010" FontSize="20" FontAttributes="Bold"/>
+                    <Label Text="Здесь вы найдете исчерпывающую информацию о различных видах улиток, их особенностях и требованиях к содержанию."/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="25" Margin="10">
+                <StackLayout>
+                    <Label Text="Наше приложение предназначено как для начинающих, так и для опытных любителей улиток. Мы постарались сделать его максимально удобным и информативным, чтобы каждый пользователь мог найти ответы на все свои вопросы."/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="25" Margin="10">
+                <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="4*,1*">
+                    <Label Text="Обратная связь" 
+                FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+
+                    <Label Text="dobrokotiki@gmail.com" 
+                FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+
+                    <Image Aspect="Fill" Source="zastavka.png" WidthRequest="75" HeightRequest="75"
+                Grid.RowSpan="4" Grid.Column="1"/>
+
+                    <Label Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="Версия 1.1.3 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

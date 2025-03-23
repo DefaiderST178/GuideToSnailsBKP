@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GuideToSnailsBKP.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GuideToSnailsBKP"
+    xmlns:local1="clr-namespace:GuideToSnailsBKP.View"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Главная" Icon="mainpage.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+
+        <Tab Title="Cправочник" Icon="snailsbook.svg">
+            <ShellContent ContentTemplate="{DataTemplate local1:SnailsGuide}" Route="SnailsInfo" />
+        </Tab>
+
+        <Tab Title="Советы" Icon="snailscare.svg">
+            <ShellContent ContentTemplate="{DataTemplate local1:SnailsCare}" Route="SnailsCare" />
+        </Tab>
+
+        <Tab Title="Подбор" Icon="loupe.svg">
+            <ShellContent ContentTemplate="{DataTemplate local1:SnailPodbor}" Route="SnailPodbor" />
+        </Tab>
+
+    </TabBar>
+
+</Shell>
