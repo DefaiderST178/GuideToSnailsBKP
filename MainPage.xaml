@@ -6,7 +6,7 @@
     <ScrollView>
         <StackLayout Orientation="Vertical" BackgroundColor="#B4B471">
             <Frame CornerRadius="10" Margin="10" BackgroundColor="#948079">
-                <Label Text="Улиточки" FontSize="22" HorizontalOptions="Center" TextColor="#231717" FontAttributes="Bold"/>
+                <Label Text="Мир улиток" FontSize="22" HorizontalOptions="Center" TextColor="#231717" FontAttributes="Bold"/>
             </Frame>
 
             <Frame CornerRadius="25" Margin="10">
@@ -18,20 +18,20 @@
 
             <Frame CornerRadius="25" Margin="10">
                 <StackLayout>
-                    <Label Text="Наше приложение предназначено как для начинающих, так и для опытных любителей улиток. Мы постарались сделать его максимально удобным и информативным, чтобы каждый пользователь мог найти ответы на все свои вопросы."/>
+                    <Label Text="Приложение разработано специально для увлекательных занятий по биологии и направлено на изучение раздела брюхоногих моллюсков. Оно станет незаменимым помощником школьникам и студентам при изучении особенностей строения, жизнедеятельности и среды обитания представителей класса брюхоногих."/>
                 </StackLayout>
             </Frame>
 
             <Frame CornerRadius="25" Margin="10">
                 <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="4*,1*">
                     <Label Text="Обратная связь" 
-                FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+                    FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
 
-                    <Label Text="dobrokotiki@gmail.com" 
-                FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="mishapro100kro@gmail.com" 
+                    FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
 
                     <Image Aspect="Fill" Source="zastavka.png" WidthRequest="75" HeightRequest="75"
-                Grid.RowSpan="4" Grid.Column="1"/>
+                    Grid.RowSpan="4" Grid.Column="1"/>
 
                     <Label Grid.Row="2" Grid.Column="0"/>
                     <Label Text="Версия 1.1.3 " FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
