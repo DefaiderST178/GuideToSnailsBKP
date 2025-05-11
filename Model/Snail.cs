@@ -13,5 +13,11 @@
         public string ShellColor { get; set; } // Цвет раковины
         public string BodyColor { get; set; } // Цвет тела
         public string LifespanInYears { get; set; } // Срок жизни
+        
+        // Обитание и рацион
+        public string Region { get; set; }
+        public string RegionDescription { get; set; }
+        public string TypeDiet { get; set; }
+        public string DietDescription { get; set; }
     }
 }
